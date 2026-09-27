@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <style>
+  <title>ENGGAL JAYA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
 @import url(https://fonts.googleapis.com/css?family=Lato);
 body {
   display: flex;
@@ -12,6 +14,17 @@ body {
   background: #222;
   overflow: hidden;
   margin:0;
+  flex-direction: column;
+}
+.title {
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-family: Lato, sans-serif;
+  letter-spacing: 5px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.8);
 }
 .btn {
   position: relative;
@@ -54,6 +67,24 @@ canvas{
   z-index: 1;
   pointer-events: none;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  color: #aaa;
+  padding: 8px;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+/* WA MENGAMBANG */
+.wa-wrapper{position:fixed;bottom:35px;right:15px;display:flex;align-items:center;gap:8px;z-index:9999;font-family:sans-serif}
+.wa-bubble{background:#25D366;color:#fff;padding:8px 16px;border-radius:20px;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.wa-btn{width:55px;height:55px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.wa-btn img{width:32px;height:32px}
   </style>
 </head>
 <body>
@@ -82,7 +113,18 @@ canvas{
   requestAnimationFrame(render);
   </script>
 
+  <div class="title">ENGGAL JAYA</div>
   <a href="https://embuhhh.github.io/engine/home.html" class="btn">ENTER</a>
+
+  <div class="footer">design by Embuh</div>
+
+  <!-- WA -->
+  <div class="wa-wrapper">
+    <div class="wa-bubble">Butuh bantuan?</div>
+    <a href="https://wa.me/6283856058316?text=Halo%20ENGGAL%20JAYA" target="_blank" class="wa-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    </a>
+  </div>
 
 </body>
 </html>
